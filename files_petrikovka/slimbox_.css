@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* SLIMBOX (Customized version) */
+
+#lbOverlay {
+position: absolute;
+top:0; left: 0;
+width: 100%;
+background-color: #000;
+cursor: pointer;
+z-index:10;
+}
+
+#lbCenter, #lbBottomContainer {
+position: absolute;
+left: 50%; padding:0;
+overflow: hidden;
+background-color: #000000;
+z-index:11;
+}
+
+.lbLoading {
+background: #000000 url(sb_loadi.gif) no-repeat center;
+}
+
+#lbCanvas {
+border: 9px solid #000000;
+}
+
+#lbCanvas iframe, #lbCanvas img {
+border:none;
+margin:0; padding:0;
+z-index:11;
+}
+
+#lbPrevLink, #lbNextLink {
+display: block;
+position: absolute;
+top: 10px;
+width: 70px;
+background:url(sb_ancho.gif);
+z-index:11;
+}
+
+
+#lbPrevLink {
+left: 0;
+}
+
+#lbPrevLink:hover {
+background: transparent url(sb_prevl.gif) no-repeat;
+}
+
+#lbNextLink {
+right: 0;
+}
+
+#lbNextLink:hover {
+background: transparent url(sb_nextl.gif) no-repeat;
+}
+
+#lbBottom {
+font-size:12px;
+font-family: Verdana, Helvetica, sans-serif;
+color: #666;
+line-height: 1.4em;
+text-align: left;
+margin:0 0 0 10px; padding:0;
+z-index:11;
+}
+
+#lbCloseLink {
+display: block;
+float: right;
+width: 66px;
+height: 22px;
+background: transparent url(sb_close.gif) no-repeat center;
+margin:0; padding:0;
+z-index:11;
+}
+
+#lbCaption{
+z-index:11;
+}
+#lbNumber {
+font-size:10px;
+z-index:11;
+}
+
+#lbCaption {
+font-weight: bold;
+}
